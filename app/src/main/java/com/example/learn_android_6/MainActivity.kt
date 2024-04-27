@@ -19,6 +19,10 @@ class MainActivity : AppCompatActivity() {
         //开始使用recyclerview
         //recyclerview使用layoutmanager来对子项进行屏幕定位
         val layoutManger = LinearLayoutManager(this)
+        //实现RecyclerView的横向滚动
+        //实际上调用的是LinearLayoutManager.setOrientation,对recyclerview的布局进行横向排列
+        layoutManger.orientation = LinearLayoutManager.HORIZONTAL
+
         val recyclerView: RecyclerView = findViewById(R.id.recyclerView1)
         //实际上调用的是recyclerView.setLayoutManger
         recyclerView.layoutManager = layoutManger
