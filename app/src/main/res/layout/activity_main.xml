@@ -5,7 +5,7 @@
     <!--RecycleView不是内置在系统SDK中，所以需要把完整的包名写出来-->
     <!--新的滚动控件RecycleView-->
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView"
+        android:id="@+id/recyclerView1"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 </LinearLayout>
